@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoMap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">GeoMap</div>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Explorar</a>
+        <a href="#">Mapa</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <div class="busca">
+        <input type="text" placeholder="Buscar localização...">
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Descubra onde você está</h1>
+        <p>Veja sua localização em tempo real com um mapa moderno e inteligente.</p>
+
+        <button id="btn">📍 Descobrir agora</button>
+    </div>
+
+</section>
+
+<!-- MAPA -->
+<section class="mapa-section">
+    <div id="mapa" class="mapa">
+        <p>Clique no botão para ver sua localização</p>
+    </div>
+</section>
+
+<!-- COORDENADAS -->
+<section class="info">
+    <div class="card">
+        <span>Latitude</span>
+        <strong id="latitude">--</strong>
+    </div>
+
+    <div class="card">
+        <span>Longitude</span>
+        <strong id="longitude">--</strong>
+    </div>
+</section>
+
+<!-- DRAG -->
+<section class="drag">
+    <div id="papel" draggable="true" class="papel">📄</div>
+    <div class="linha"></div>
+    <div id="lixeira" class="lixeira">🗑️</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
